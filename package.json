@@ -12,13 +12,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "postinstall": "husky install",
-    "format": "prettier --cache --write .",
-    "lint": "eslint --cache .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "husky install",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache ."
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +49,10 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.8"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": ".eslintrc.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
