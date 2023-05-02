@@ -28,6 +28,7 @@ module.exports = {
     'arrow-parens': [0, 'as-needed', { requireForBlockBody: true }],
     'no-use-before-define': 2,
     'react/react-in-jsx-scope': 0,
+    'react/button-has-type': 0,
     'no-shadow': 0,
     'react/prop-types': 0,
     'react/jsx-filename-extension': [
@@ -41,11 +42,13 @@ module.exports = {
     //  switch 문에서 default case를 사용하지 않을 때 경고를 끔으로써 default case가 필수적이지 않을 때 규칙을 비활성화합니다.
     'default-case': 2,
     'consistent-return': 0,
+    'no-unused-vars': 1,
     'no-param-reassign': 2,
     'jsx-a11y/label-has-associated-control': 1,
     // 'react/require-default-props': 0,
     //  <abc />
     'react/self-closing-comp': 0, // 자식 컴포넌트 없을 때 닫기 태그
+    'react/function-component-definition': 0,
     // airbnb 기본 'no-restricted-syntax'
     // ForInStatement
     // ForOfStatement
