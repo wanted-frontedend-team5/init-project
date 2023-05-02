@@ -4,10 +4,11 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:prettier/recommended',
     'plugin:react/recommended',
     'plugin:import/recommended',
     'airbnb',
+    'airbnb/hooks',
+    'plugin:prettier/recommended',
   ],
   overrides: [],
   parserOptions: {
@@ -17,11 +18,14 @@ module.exports = {
   plugins: ['react'],
   rules: {
     // for enabling the rule. 0=off, 1=warn, 2=error. Defaults to 0.
+    'object-curly-newline': 'off',
     'linebreak-style': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0, // 테스트 또는 개발환경을 구성하는 파일에서는 devDependency 사용을 허용
+    // 화살표 함수, 괄호 생략 가능
+    'arrow-parens': [0, 'as-needed', { requireForBlockBody: true }],
     'no-use-before-define': 2,
     'react/react-in-jsx-scope': 0,
     'no-shadow': 0,
